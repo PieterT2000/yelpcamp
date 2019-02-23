@@ -13,3 +13,9 @@
 .btn {
     transition: 0.4s all;
 }
+
+/* Google Maps */
+#map {
+    height: 400px;
+    width: 100%;
+}
