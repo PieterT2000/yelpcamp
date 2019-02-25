@@ -5,7 +5,7 @@ Updates following soon
 
 ### Installation Instructions
 
-1. First run ```npm install```
+1. Clone this repo and run ```npm install``` in your terminal
 2. Create a ```.env``` file in the main directory, with your Geocode API.
 2. run ```npm start```
 
