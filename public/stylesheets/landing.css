@@ -2,6 +2,7 @@ body {
     background-color: black;
 }
 
+<<<<<<< HEAD
 .typed-cursor{
     display: none;
 }
@@ -37,11 +38,17 @@ svg {
     background-image: linear-gradient(120deg, rgba(212,252,121,0.9) 0%, rgba(150,230,161, 0.9) 100%);
 }
 
+=======
+>>>>>>> newFeature/master
 #landing-header {
   z-index: 1;
   position: relative;
   text-align: center;
+<<<<<<< HEAD
   padding-top: 30vh;
+=======
+  padding-top: 40vh;
+>>>>>>> newFeature/master
 }
 
 #landing-header h1 {
@@ -118,5 +125,8 @@ svg {
 
 .btn-success {
     transition: 0.4s all;
+<<<<<<< HEAD
     margin-top: 50px;
+=======
+>>>>>>> newFeature/master
 }
