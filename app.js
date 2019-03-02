@@ -10,8 +10,7 @@ const   express         = require("express"),
         Comment         = require("./models/comment"),
         User            = require("./models/user"),
         methodOverride  = require("method-override"),
-        flash           = require("connect-flash"),
-        seedDB          = require("./seeds");
+        flash           = require("connect-flash")
 
 //requiring routes       
 let     commentRoutes   = require("./routes/comments"),
