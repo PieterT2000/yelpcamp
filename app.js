@@ -52,6 +52,6 @@ app.use(indexRoutes);
 app.use('/campgrounds', campgroundRoutes); //add prefix to route
 app.use('/campgrounds/:id/comments', commentRoutes);
 
-app.listen((process.env.PORT, process.env.IP || 3000), function() {
+app.listen(process.env.PORT, process.env.IP || 3000, function() {
 	console.log('YelpCamp Server has started!');
 });
