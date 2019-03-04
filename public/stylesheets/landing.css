@@ -1,114 +1,112 @@
 body {
-    background-color: black;
+	background-color: black;
 }
 
-.typed-cursor{
-    display: none;
+.typed-cursor {
+	display: none;
 }
 
 svg {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 100px;
-  /* set height to pixels if you want angle to change with screen width */
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	/* set height to pixels if you want angle to change with screen width */
 }
 
 .main-stop {
-  stop-color: rgba(212,252,121,0.9);
+	stop-color: rgba(212, 252, 121, 0.9);
 }
 .alt-stop {
-  stop-color: rgba(150,230,161, 0.9);
+	stop-color: rgba(150, 230, 161, 0.9);
 }
 
 #typed1 {
-  text-transform: uppercase;
-  height: 30px;
+	text-transform: uppercase;
+	height: 30px;
 }
 
-
 .typed {
-    width: 25%;
-    margin: 0 auto;
-    padding: 50px 0;
-    border-radius: 30px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12),
-            0 2px 4px 0 rgba(0,0,0,0.08);
-    background-image: linear-gradient(120deg, rgba(212,252,121,0.9) 0%, rgba(150,230,161, 0.9) 100%);
+	width: 400px;
+	margin: 0 auto;
+	padding: 50px 0;
+	border-radius: 30px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+	background-image: linear-gradient(120deg, rgba(212, 252, 121, 0.9) 0%, rgba(150, 230, 161, 0.9) 100%);
 }
 
 #landing-header {
-  z-index: 1;
-  position: relative;
-  text-align: center;
-  padding-top: 30vh;
+	z-index: 1;
+	position: relative;
+	text-align: center;
+	padding-top: 30vh;
 }
 
 #landing-header h1 {
-  color: #fff;
+	color: #fff;
 }
 
-.slideshow { 
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.slideshow {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
-.slideshow li { 
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  opacity: 0;
-  z-index: 0;
-  animation: imageAnimation 50s linear infinite; 
+.slideshow li {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	opacity: 0;
+	z-index: 0;
+	animation: imageAnimation 50s linear infinite;
 }
 
-.slideshow li:nth-child(1) { 
-  background-image: url(http://i.imgur.com/K3mPv14.jpg) 
+.slideshow li:nth-child(1) {
+	background-image: url(http://i.imgur.com/K3mPv14.jpg);
 }
-.slideshow li:nth-child(2) { 
-  background-image: url(http://i.imgur.com/SBEmFpv.jpg);
-  animation-delay: 10s; 
+.slideshow li:nth-child(2) {
+	background-image: url(http://i.imgur.com/SBEmFpv.jpg);
+	animation-delay: 10s;
 }
-.slideshow li:nth-child(3) { 
-  background-image: url(http://i.imgur.com/emvhOnb.jpg);
-  animation-delay: 20s; 
+.slideshow li:nth-child(3) {
+	background-image: url(http://i.imgur.com/emvhOnb.jpg);
+	animation-delay: 20s;
 }
-.slideshow li:nth-child(4) { 
-  background-image: url(http://i.imgur.com/2LSMCmJ.jpg);
-  animation-delay: 30s; 
+.slideshow li:nth-child(4) {
+	background-image: url(http://i.imgur.com/2LSMCmJ.jpg);
+	animation-delay: 30s;
 }
-.slideshow li:nth-child(5) { 
-  background-image: url(http://i.imgur.com/TVGe0Ef.jpg);
-  animation-delay: 40s; 
+.slideshow li:nth-child(5) {
+	background-image: url(http://i.imgur.com/TVGe0Ef.jpg);
+	animation-delay: 40s;
 }
 
-@keyframes imageAnimation { 
-  0% { 
-    opacity: 0; 
-    animation-timing-function: ease-in;
-  }
-  10% {
-    opacity: 1;
-    animation-timing-function: ease-out;
-  }
-  20% {
-    opacity: 1
-  }
-  30% {
-    opacity: 0
-  }
+@keyframes imageAnimation {
+	0% {
+		opacity: 0;
+		animation-timing-function: ease-in;
+	}
+	10% {
+		opacity: 1;
+		animation-timing-function: ease-out;
+	}
+	20% {
+		opacity: 1;
+	}
+	30% {
+		opacity: 0;
+	}
 }
 
 /* Older browser support - .no-cssanimations class added by modernizr */
@@ -117,6 +115,6 @@ svg {
 }
 
 .btn-success {
-    transition: 0.4s all;
-    margin-top: 50px;
+	transition: 0.4s all;
+	margin-top: 50px;
 }

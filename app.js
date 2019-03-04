@@ -6,14 +6,12 @@ const express = require('express'),
 	mongoose = require('mongoose'),
 	passport = require('passport'),
 	LocalStrategy = require('passport-local'),
-	Campground = require('./models/campground'),
-	Comment = require('./models/comment'),
 	User = require('./models/user'),
 	methodOverride = require('method-override'),
 	flash = require('connect-flash');
 
 //requiring routes
-let commentRoutes = require('./routes/comments'),
+const commentRoutes = require('./routes/comments'),
 	campgroundRoutes = require('./routes/campgrounds'),
 	indexRoutes = require('./routes/index');
 
@@ -24,7 +22,6 @@ app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
 app.use(methodOverride('_method'));
 app.use(flash());
-// seedDB(); //seed the database
 
 //passport configuration
 app.use(
