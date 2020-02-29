@@ -49,6 +49,7 @@ app.use(indexRoutes);
 app.use('/campgrounds', campgroundRoutes); //add prefix to route
 app.use('/campgrounds/:id/comments', commentRoutes);
 
-app.listen(process.env.PORT || 3000, process.env.IP, function() {
-	console.log('YelpCamp Server has started!');
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, process.env.IP, function() {
+	console.log(`YelpCamp Server has started on port ${PORT}!`);
 });
